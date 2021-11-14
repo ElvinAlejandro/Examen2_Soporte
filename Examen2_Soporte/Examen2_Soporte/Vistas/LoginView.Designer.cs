@@ -63,6 +63,7 @@ namespace Examen2_Soporte.Vistas
             this.CorreoTextBox.Name = "CorreoTextBox";
             this.CorreoTextBox.Size = new System.Drawing.Size(248, 23);
             this.CorreoTextBox.TabIndex = 2;
+            this.CorreoTextBox.Text = "elvin@gmail.com";
             this.CorreoTextBox.TextChanged += new System.EventHandler(this.CorreoTextBox_TextChanged);
             // 
             // ClaveTextBox
@@ -72,6 +73,7 @@ namespace Examen2_Soporte.Vistas
             this.ClaveTextBox.PasswordChar = '*';
             this.ClaveTextBox.Size = new System.Drawing.Size(248, 23);
             this.ClaveTextBox.TabIndex = 3;
+            this.ClaveTextBox.Text = "4321";
             this.ClaveTextBox.TextChanged += new System.EventHandler(this.ClaveTextBox_TextChanged);
             // 
             // IngresarButton
