@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Examen2_Soporte.Controladores;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,24 @@ namespace Examen2_Soporte.Vistas
         public LoginView()
         {
             InitializeComponent();
+            LoginController controlador = new LoginController(this);
         }
 
+        private void CorreoTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClaveTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CancelarButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+     
     }
 }

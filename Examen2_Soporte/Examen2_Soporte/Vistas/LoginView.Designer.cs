@@ -31,8 +31,8 @@ namespace Examen2_Soporte.Vistas
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.CorreoTextBox = new System.Windows.Forms.TextBox();
+            this.ClaveTextBox = new System.Windows.Forms.TextBox();
             this.IngresarButton = new System.Windows.Forms.Button();
             this.CancelarButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -57,20 +57,22 @@ namespace Examen2_Soporte.Vistas
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña";
             // 
-            // textBox1
+            // CorreoTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(130, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(248, 23);
-            this.textBox1.TabIndex = 2;
+            this.CorreoTextBox.Location = new System.Drawing.Point(130, 49);
+            this.CorreoTextBox.Name = "CorreoTextBox";
+            this.CorreoTextBox.Size = new System.Drawing.Size(248, 23);
+            this.CorreoTextBox.TabIndex = 2;
+            this.CorreoTextBox.TextChanged += new System.EventHandler(this.CorreoTextBox_TextChanged);
             // 
-            // textBox2
+            // ClaveTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(131, 112);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(248, 23);
-            this.textBox2.TabIndex = 3;
+            this.ClaveTextBox.Location = new System.Drawing.Point(131, 112);
+            this.ClaveTextBox.Name = "ClaveTextBox";
+            this.ClaveTextBox.PasswordChar = '*';
+            this.ClaveTextBox.Size = new System.Drawing.Size(248, 23);
+            this.ClaveTextBox.TabIndex = 3;
+            this.ClaveTextBox.TextChanged += new System.EventHandler(this.ClaveTextBox_TextChanged);
             // 
             // IngresarButton
             // 
@@ -89,6 +91,7 @@ namespace Examen2_Soporte.Vistas
             this.CancelarButton.TabIndex = 5;
             this.CancelarButton.Text = "Cancelar";
             this.CancelarButton.UseVisualStyleBackColor = true;
+            this.CancelarButton.Click += new System.EventHandler(this.CancelarButton_Click);
             // 
             // LoginView
             // 
@@ -97,12 +100,12 @@ namespace Examen2_Soporte.Vistas
             this.ClientSize = new System.Drawing.Size(459, 236);
             this.Controls.Add(this.CancelarButton);
             this.Controls.Add(this.IngresarButton);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ClaveTextBox);
+            this.Controls.Add(this.CorreoTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "LoginView";
-            this.Text = "LoginView";
+            this.Text = "Inicio de Sesión";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,9 +115,9 @@ namespace Examen2_Soporte.Vistas
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button IngresarButton;
-        private System.Windows.Forms.Button CancelarButton;
+        public System.Windows.Forms.TextBox CorreoTextBox;
+        public System.Windows.Forms.TextBox ClaveTextBox;
+        public System.Windows.Forms.Button IngresarButton;
+        public System.Windows.Forms.Button CancelarButton;
     }
 }

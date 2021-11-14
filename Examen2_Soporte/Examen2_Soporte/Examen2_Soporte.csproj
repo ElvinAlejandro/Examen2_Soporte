@@ -43,8 +43,7 @@
   
   
   <ItemGroup>
-    <Folder Include="Controladores\" />
-    <Folder Include="Vistas\" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
   </ItemGroup>
 
 </Project>
