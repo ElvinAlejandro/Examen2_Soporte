@@ -39,7 +39,7 @@ namespace Examen2_Soporte.Controladores
 
             if (esValido)
             {
-                MessageBox.Show("Usuario Correcto");
+                MessageBox.Show("yessssss Usuario Correcto");
                 //MenuView menu = new MenuView();
                 //vista.Hide();
 
